@@ -1,0 +1,186 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(90deg, #005aa7 0%,#fffde4 100% );
+}
+
+.clear {
+	clear:both;
+}
+
+.hide {
+	display:none;
+}
+
+.default-cursor{
+	cursor:default;
+}
+
+#my-world-clock {
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: white;
+	margin: 20px;
+}
+
+canvas {
+	width: 100px;
+	height: 50px;
+	position:relative;
+	top: 10px;
+}
+
+#main-container{
+	position: relative;
+	top: 75px;
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: center;
+}
+
+#location {
+	text-align: center;
+	font-size: 2em;
+}
+
+#country {
+	position: absolute;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+#time {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+#date {
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+#weather-btn {
+	width: 130px;
+	margin-top: 30px;
+	border: 2px solid white;
+	border-radius: 20px;
+	background: none;
+	outline: none;
+	padding: 10px;
+	text-align: center;
+	cursor:pointer;
+	transition: all 0.40s;
+}
+
+#weather-btn:active {
+	background: white;
+	
+}
+
+#weather-btn span{
+	position: relative;
+	right:0.1px;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	transition: 0.5s;
+}
+
+#weather-btn:hover span {
+  right: 15px;
+}
+
+#weather-btn:active span {
+	color:black;
+}
+
+#weather-btn img{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	opacity: 0;
+	transition: 0.3s
+}
+
+#weather-btn:hover img {
+  opacity: 1;
+}
+
+#weather-container {
+	cursor: default;
+	margin-top: 30px;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	line-height: 30px;
+}
+
+#weather-icon-wrapper {
+	display:inline-block;
+	width: 90px;
+	height: 70px;
+}
+
+#weather-icon {
+	max-width:100%;
+	max-height:100%;
+}
+
+#temp {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#degree {
+	font-size: 1.5em;
+	position:absolute;
+}
+
+#min-max-wrapper {
+	font-style: italic;
+	font-weight: bold;
+}
+
+#temp-min {
+	border-right: 1px white solid;
+	padding-right: 7px;
+	color: #2d93ff;
+}
+
+#temp-max {
+	color: #ff2327;
+}
+
+#select-wrapper {
+	text-align: center;
+}
+
+#selection-container{
+	margin: 15px;
+	opacity: 0.5;
+	transition: 0.5s;
+	display:inline-block;
+	width: 250px;
+	height: 100px;
+}
+
+#selection-container:hover {
+	opacity: 1;
+}
+
+#choose {
+	margin-top: 20px; 
+	font-size: 1.2em;
+}
+
+#location-list {
+	width:110px;
+	border:1px solid white;
+	border-radius: 8px;
+	outline:none;
+	color:black;
+	font-size: 0.8em;
+	font-family: 'Lexend Deca', sans-serif;
+	background:white;
+	margin: 4px;
+	padding: 5px;
+}
